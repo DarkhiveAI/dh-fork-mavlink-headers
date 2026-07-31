@@ -40,7 +40,7 @@ typedef enum OPENHD_CMD
 {
    OPENHD_CMD_INITIATE_CHANNEL_SEARCH=11200, /* Initiate channel search, aka find the channel the air unit is currently running on |frequency channels to scan, 0=2.4G and 5.8G, 1: 2.4G only, 2: 5G only| Empty| Empty| Empty|  */
    OPENHD_CMD_INITIATE_CHANNEL_ANALYZE=11201, /* Initiate channel analyze, aka find the least polluted channel |Empty| Empty| Empty|  */
-   OPENHD_CMD_DUMMY1=11202, /* dummy1 |Empty| Empty| Empty|  */
+   OPENHD_CMD_STORAGE_MANAGE=11202, /* Manage safe non-root storage. Param1: 1 refresh, 2 repartition disk, 3 mount partition at /Video. Param2: storage ID. Param3: confirmation (1 required for destructive actions). |Action| Storage ID| Confirmation|  */
    OPENHD_CMD_DUMMY2=11203, /* dummy2 |Empty| Empty| Empty|  */
    OPENHD_CMD_ENUM_END=11204, /*  | */
 } OPENHD_CMD;
